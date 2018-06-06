@@ -21,6 +21,11 @@ nav.main {
         };
         text-transform: uppercase;
         text-decoration: none;
+        letter-spacing: 2px;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }

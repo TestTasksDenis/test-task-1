@@ -1,7 +1,9 @@
 .header {
-  display: flex;
-  flex-wrap: wrap;
   position: relative;
+
+  .header__row {
+    display: flex;
+  }
 
   .header__blackout {
     position: absolute;
@@ -10,5 +12,27 @@
     background: url("#{$img-folder}/blocks/home/blockout.png") no-repeat center;
     height: 175px;
     width: 100%;
+  }
+
+  .header__inst {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    font: {
+      family: $font2, sans-serif;
+      size: 16px;
+      weight: 700;
+    };
+    color: #ffffff;
+    background: url("#{$icons-folder}/instagram.svg") no-repeat left center;
+    padding-left: 27px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    line-height: 20px;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

@@ -20,11 +20,14 @@ $icons-folder: "../icons";
 // 900: Black, Heavy
 
 $font1: "OpenSans";
+$font2: "ProximaNova";
 
 $fonts:(
   OpenSans-Light: ($font1, "#{$fonts-folder}/#{$font1}/Light/#{$font1}-Light", 300, normal),
   OpenSans-Regular: ($font1, "#{$fonts-folder}/#{$font1}/Regular/#{$font1}-Regular", 400, normal),
   OpenSans-Semibold: ($font1, "#{$fonts-folder}/#{$font1}/Semibold/#{$font1}-Semibold", 600, normal),
+  OpenSans-Bold: ($font1, "#{$fonts-folder}/#{$font1}/Bold/#{$font1}-Bold", 700, normal),
+  ProximaNova-Semibold: ($font2, "#{$fonts-folder}/#{$font2}/Semibold/#{$font1}-Semibold", 600, normal),
 );
 
 $font-family-default : $font1;

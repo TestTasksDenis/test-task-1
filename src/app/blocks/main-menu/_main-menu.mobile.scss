@@ -1,0 +1,17 @@
+@media only screen and (max-width: 768px) {
+  nav.main ul li {
+    margin: 0 18px;
+    line-height: 55px;
+  }
+
+  nav.main ul li a {
+    letter-spacing: 0;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  nav.main ul {
+    flex-direction: column;
+  }
+}

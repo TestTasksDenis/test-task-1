@@ -1,1 +1,52 @@
-﻿
+﻿@media only screen and (max-width: 1024px) {
+  .page.page--home .page__content .about h1 {
+    padding: 0 50px;
+  }
+
+  .page.page--home .page__content .hot .hot__block .hot__block-section.hot__block-section--text {
+    padding: 0 80px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .page.page--home .page__content .about {
+    padding: 70px 0;
+  }
+
+  .page.page--home .page__content .about h1 {
+    font: {
+      size: 40px;
+    };
+    margin-bottom: 30px;
+  }
+
+  .page.page--home .page__content .hot .hot__block {
+    flex-direction: column;
+  }
+
+  .page.page--home .page__content .hot .hot__block .hot__block-section {
+    order: 2;
+  }
+
+  .page.page--home .page__content .hot .hot__block .hot__block-section.hot__block-section--text {
+    order: 1;
+    padding: 40px 50px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .page.page--home .page__content .about h1 {
+    font: {
+      size: 20px;
+    };
+    line-height: 30px;
+  }
+
+  .page.page--home .page__content .hot .hot__block .hot__block-section.hot__block-section--text h3:before {
+    display: none;
+  }
+
+  .page.page--home .page__content .hot .hot__block .hot__block-section.hot__block-section--text {
+    padding: 40px 0;
+  }
+}

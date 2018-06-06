@@ -1,14 +1,14 @@
 ﻿.page.page--home {
   .page__content {
     .about {
-      padding: 110px 0;
+      padding: 110px 0 175px 0;
       background-color: #fbfafa;
       position: relative;
       z-index: 3;
+      text-align: center;
       
       .about__icon {
-        text-align: center;
-        margin-bottom: 40px;
+        margin-bottom: 28px;
       }
 
       h1 {
@@ -19,6 +19,52 @@
         text-align: center;
         color: #555559;
         padding: 0 190px;
+        margin-bottom: 85px;
+      }
+    }
+
+    .hot {
+      .hot__block {
+        @include grid();
+
+        .hot__block-section {
+          @include size(6);
+          display: flex;
+          align-items: center;
+
+          &.hot__block-section--text {
+            padding: 0 135px;
+            color: #555559;
+
+            h3 {
+              font: {
+                size: 24px;
+                weight: 700;
+              };
+              margin-bottom: 20px;
+              position: relative;
+
+              &:before {
+                content: '';
+                height: 2px;
+                width: 30px;
+                display: block;
+                background-color: #286782;
+                position: absolute;
+                top: 14px;
+                left: -50px;
+              }
+            }
+
+            p {
+              font: {
+                size: 18px;
+                weight: 300;
+              };
+              line-height: 24px;
+            }
+          }
+        }
       }
     }
   }

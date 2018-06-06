@@ -1,0 +1,24 @@
+.footer {
+  background-color: #efefef;
+  display: flex;
+  justify-content: space-between;
+  line-height: 76px;
+  padding: 0 20px;
+  border: 1px solid #e9e9e9;
+  border-top: 0;
+  color: #555559;
+
+  span {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #555559;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@media only screen and (max-width: 768px) {
+  .footer {
+    text-align: center;
+    flex-direction: column;
+    line-height: normal;
+    padding: 25px 0;
+
+    p {
+      line-height: 24px;
+    }
+  }
+}
