@@ -1,0 +1,42 @@
+@mixin containers ($key, $size){
+  @if($key == main) {
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+      width: $size;
+    }
+
+    @if($response-breakpoint != null) {
+      @include media($size){
+        .container {
+          padding-left: $container-response-padding;
+          padding-right: $container-response-padding;
+          width: 100%;
+        }
+      }
+    }
+  }
+  @else {
+    .container--#{$key}{
+      margin-left: auto;
+      margin-right: auto;
+      width: $size;
+    }
+
+    @if($response-breakpoint != null) {
+      @include media($size){
+        .container--#{$key}{
+          padding-left: $container-response-padding;
+          padding-right: $container-response-padding;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@mixin absolute-content ($symbol: "") {
+    content: $symbol;
+    display: block;
+    position: absolute;
+}

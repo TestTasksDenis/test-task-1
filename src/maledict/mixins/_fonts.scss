@@ -1,0 +1,11 @@
+@mixin embeddedFonts($name, $path, $weight, $style){
+  @font-face {
+    font-family: $name;
+    font-style: $style;
+    font-weight: $weight;
+    src: url('#{$path}.eot'),
+         url('#{$path}.woff') format('woff'),
+         url('#{$path}.woff2') format('woff2'),
+         url('#{$path}.ttf') format('truetype'),
+  }
+}

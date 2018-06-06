@@ -1,0 +1,95 @@
+@mixin button($mark, $height, $width){
+  .btn--#{$mark} {
+    @if ($width != auto) {
+      width: $width;
+    }
+    height: $height;
+    line-height: $height;
+  }
+}
+
+@mixin rounded() {
+    border-radius: 20em;
+}
+
+@mixin button-animation-pseudo() {
+    content: '';
+    position: absolute;
+    display: block;
+    z-index: 1;
+}
+
+@mixin button-animation-props($width: none, $height: none, $top: none, $left: none, $right: none, $bottom: none) {
+    @if($width != none) {
+        width: $width;
+    }
+
+    @if($height != none) {
+        height: $height;
+    }
+
+    @if($top != none) {
+        top: $top;
+    }
+
+    @if($left != none) {
+        left: $left;
+    }
+
+    @if($right != none) {
+        right: $right;
+    }
+
+    @if($bottom != none) {
+        bottom: $bottom;
+    }
+}
+
+@mixin button-size($line-height: auto, $padding: 0, $width: auto) {
+    @if($line-height != auto) {
+        height: $line-height;
+    }
+
+    @if($padding != 0) {
+        padding: $padding;
+    }
+
+    @if($width != auto) {
+        width: $width;
+        text-align: center;
+    }
+}
+
+@mixin btn-hover($bg: none, $color: none, $border: none) {
+    &:hover {
+        @if($bg != none) {
+            background: $bg;
+        }
+
+        @if($color != none) {
+            color: $color;
+        }
+
+        @if($border != none) {
+            border: $border;
+        }
+    }
+}
+
+@mixin btn-hover-animation($bg: none, $color: none, $border: none) {
+    &:after {
+        @if($bg != none) {
+            background: $bg;
+        }
+
+        @if($border != none) {
+            border: $border;
+        }
+    }
+
+    &:hover {
+        @if($color != none) {
+            color: $color;
+        }
+    }
+}

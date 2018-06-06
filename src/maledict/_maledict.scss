@@ -1,0 +1,55 @@
+@import "../app/settings";
+
+@import "./mixins/background";
+@import "./mixins/buttons";
+@import "./mixins/fonts";
+@import "./mixins/grid";
+@import "./mixins/layout";
+@import "./mixins/media";
+
+// Fonts
+@each $key, $font in $fonts {
+  @include embeddedFonts(nth($font, 1), nth($font, 2), nth($font, 3), nth($font, 4));
+}
+
+// Containers
+@each $key, $width in $containers {
+  @include containers($key, $width);
+}
+
+// Grid
+@each $key, $grid in $grids {
+  @include grid-class(nth($grid, 1), nth($grid, 2), nth($grid, 3), $key);
+}
+
+// Default styles
+body {
+  font: {
+    family: $font-family-default, $font-style-default;
+    size: $font-size-default;
+  };
+  @if ($body-bg != null) {
+    background-color: $body-bg;
+  }
+  @if ($body-color != null) {
+    color: $body-color;
+  }
+}
+
+b, strong {
+  font: {
+    family: $font-bold-default, $font-style-default;
+    weight: 700;
+  };
+}
+
+address, cite, dfn, em, i {
+  font: {
+    family: $font-italic-default, $font-style-default;
+    style: italic;
+  };
+}
+
+pre, code, kbd, samp {
+  font-family: $font-monospace-default;
+}

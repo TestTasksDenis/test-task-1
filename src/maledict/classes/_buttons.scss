@@ -1,0 +1,16 @@
+.btn {
+    white-space: nowrap;
+    touch-action: manipulation;
+    user-select: none;
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+
+    span {
+        z-index: 2;
+        position: relative;
+    }
+}

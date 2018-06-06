@@ -1,0 +1,27 @@
+nav.main {
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 5;
+
+  ul {
+    list-style: none;
+    display: inline-flex;
+
+    li {
+      line-height: 100px;
+      margin: 0 40px;
+
+      a {
+        color: #2e2e2e;
+        font: {
+          weight: 600;
+          size: 20px;
+        };
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
+  }
+}

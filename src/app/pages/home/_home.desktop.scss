@@ -1,0 +1,25 @@
+﻿.page.page--home {
+  .page__content {
+    .about {
+      padding: 110px 0;
+      background-color: #fbfafa;
+      position: relative;
+      z-index: 3;
+      
+      .about__icon {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      h1 {
+        font: {
+          size: 56px;
+          weight: 300;
+        };
+        text-align: center;
+        color: #555559;
+        padding: 0 190px;
+      }
+    }
+  }
+}

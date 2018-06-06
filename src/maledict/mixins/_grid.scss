@@ -1,0 +1,42 @@
+@mixin grid-class($count, $margins: 0, $indents: 0, $key: null) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    @if ($indents != 0) {
+      padding-left: $indents;
+      padding-right: $indents;
+    }
+
+    @for $index from 1 through $count {
+      .col-#{$index} {
+        flex-basis: unquote((100 / $count) * $index + '%');
+
+        @if ($margins != 0) {
+          margin-left: $margins / 2;
+          margin-right: $margins / 2;
+        }
+      }
+    }
+  }
+}
+
+@mixin grid() {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin size($size, $resolution: null) {
+  @if ($resolution != null) {
+    @each $key, $breakpoint in $resolution-breakpoints{
+      @if ($key == $resolution) {
+        @include media(nth($breakpoint, 1), nth($breakpoint, 2)) {
+          flex-basis: unquote((100 / 12) * $size + '%');
+        }
+      }
+    }
+  }
+  @else {
+    flex-basis: unquote((100 / 12) * $size + '%');
+  }
+}

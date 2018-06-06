@@ -1,0 +1,84 @@
+/* Folders
+========================================================================== */
+
+$fonts-folder: "../fonts";
+$img-folder: "../img";
+$icons-folder: "../icons";
+
+/* Site fonts
+========================================================================== */
+
+// Font Marking
+// 100: Thin, Hairline
+// 200: Extra Light, Ultra Light
+// 300: Light
+// 400: Regular
+// 500: Medium
+// 600: Semi Bold
+// 700: Bold
+// 800: Extra Bold, Ultra Bold
+// 900: Black, Heavy
+
+$font1: "OpenSans";
+
+$fonts:(
+  OpenSans-Light: ($font1, "#{$fonts-folder}/#{$font1}/Light/#{$font1}-Light", 300, normal),
+  OpenSans-Regular: ($font1, "#{$fonts-folder}/#{$font1}/Regular/#{$font1}-Regular", 400, normal),
+  OpenSans-Semibold: ($font1, "#{$fonts-folder}/#{$font1}/Semibold/#{$font1}-Semibold", 600, normal),
+);
+
+$font-family-default : $font1;
+$font-bold-default : $font1;
+$font-italic-default : $font1;
+$font-monospace-default : Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-style-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+$font-size-default : 14px;
+
+/* Layout
+========================================================================== */
+
+// eq. main: .container
+// eq. xl: .container--xl
+$containers: (
+  main: 1140px,
+  xl: 1440px,
+  lg: 1280px,
+  md: 980px,
+  sm: 768px,
+);
+
+$container-response-padding : 15px;
+
+/* Grid
+========================================================================== */
+
+// Column counts
+// Column margins
+// Grid padding
+
+$grids: (
+  main: (12, 0, 0),
+);
+
+/* Response
+========================================================================== */
+
+$response-breakpoint : 1200px;
+$table-wrap-width : 1280px;
+
+$resolution-breakpoints: (
+  xs: (425px, max-width),
+  sm: (768px, max-width),
+  md: (980px, max-width),
+  lg: (1280px, max-width),
+  xl: (1440px, max-width)
+);
+
+/* Default styles
+========================================================================== */
+
+// Body
+$body-bg : #fff;
+$body-color : #000;
+
+

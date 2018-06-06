@@ -1,0 +1,16 @@
+﻿.nav {
+    ul {
+        list-style: none;
+    }
+
+    & > ul {
+        display: flex;
+        align-items: center;
+    }
+
+    &.nav--vertical {
+        & > ul {
+            flex-direction: column;
+        }
+    }
+}

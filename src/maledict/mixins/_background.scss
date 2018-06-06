@@ -1,0 +1,9 @@
+@mixin bg-color($selector, $color) {
+  #{$selector} {
+    background-color: $color;
+  }
+}
+
+@mixin linear-gradient($direction, $gradients...) {
+  background: linear-gradient($direction, $gradients...);
+}

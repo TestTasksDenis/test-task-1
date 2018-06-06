@@ -1,0 +1,28 @@
+@mixin media($value, $property: max-width) {
+  @media only screen and ($property: $value) {
+    @content;
+  }
+}
+
+@mixin media-breakpoint($marker){
+  @if($marker == "lg"){
+    @media only screen and (max-width: 1280px) {
+      @content;
+    }
+  }
+  @else if($marker == "md"){
+    @media only screen and (max-width: 980px) {
+      @content;
+    }
+  }
+  @else if($marker == "sm"){
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  @else if($marker == "xl"){
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+}
