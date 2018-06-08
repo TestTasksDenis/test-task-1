@@ -27,7 +27,7 @@ $fonts:(
   OpenSans-Regular: ($font1, "#{$fonts-folder}/#{$font1}/Regular/#{$font1}-Regular", 400, normal),
   OpenSans-Semibold: ($font1, "#{$fonts-folder}/#{$font1}/Semibold/#{$font1}-Semibold", 600, normal),
   OpenSans-Bold: ($font1, "#{$fonts-folder}/#{$font1}/Bold/#{$font1}-Bold", 700, normal),
-  ProximaNova-Semibold: ($font2, "#{$fonts-folder}/#{$font2}/Semibold/#{$font1}-Semibold", 600, normal),
+  ProximaNova-Semibold: ($font2, "#{$fonts-folder}/#{$font2}/Semibold/#{$font2}-Semibold", 600, normal),
 );
 
 $font-family-default : $font1;

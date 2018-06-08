@@ -1,5 +1,5 @@
 const path = require('path');
-const webpack = require('webpack');
+
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
@@ -11,7 +11,7 @@ const PATH = {
 };
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     context: path.resolve(__dirname, 'src'),
     watch: false,
     devtool: 'source-map',
